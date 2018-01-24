@@ -1,0 +1,14 @@
+---
+interface1:
+  name: 
+  unit: 
+  family: 
+  address: 
+  cidr: 
+
+interface2:
+  name: 
+  unit: 
+  family: 
+  address:
+  cidr: 
