@@ -1,0 +1,11 @@
+set system host-name {{system.hostname}}
+set system ntp server {{system.ntpserver}}
+set system ntp boot-server {{system.ntpserver}}
+set system name-server {{system.nameserver}}
+set system domain-name {{system.domain}}
+
+{% for service in services %}
+set system services {{service}}
+{% endfor %}
+
+set interfaces {{management.interface}} unit {{management.unit}} family {{management.family}} address {{management.address}}/{{management.cidr}}
